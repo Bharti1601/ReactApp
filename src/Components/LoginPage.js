@@ -18,7 +18,7 @@ export default function LoginPage(props) {
     <>
       <div className="container">
         <h1>{props.Login}</h1>
-        <p align="center">User Name</p>
+        <p align="center">UserName</p>
         <textarea className="form-control" id="Message" rows="2"></textarea>
         <p align="center">Password</p>
         <textarea className="form-control" id="Message2" rows="2"></textarea>
