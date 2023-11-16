@@ -11,7 +11,7 @@ const LoginPage = (props) => {
     const Message2 = document.getElementById("Message2");
     console.log(Message2.value);
 
-    if (Message.value === "Avanish" && Message2.value === "Avanish") {
+    if (Message.value === "Bharti" && Message2.value === "Bharti") {
       navigate("/HomePage");
     } else {
       alert("Login failed");
@@ -20,14 +20,14 @@ const LoginPage = (props) => {
 
   return (
     <>
-      <div className="container">
+      <div className="loginPage">
         <h1>Login Page</h1>
         <p align="center">UserName</p>
         <textarea className="form-control" id="Message" rows="2"></textarea>
         <p align="center">Password</p>
         <textarea className="form-control" id="Message2" rows="2"></textarea>
         <div className="mb-3">
-          <button className="btn btn-primary" onClick={LogIn}>
+          <button className="btn btn-primary loginButton" onClick={LogIn}>
             LOGIN
           </button>
         </div>

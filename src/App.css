@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:white;
 }
 
 .App-link {
@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.loginPage {
+  border: 1px solid rgb(66, 13, 238);
+  background-color: rgb(8, 8, 8);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px; 
+  height: 350px;
+  width: 400px;
+  }
+  .loginButton{
+    margin-top: 10px;
+  }
+  

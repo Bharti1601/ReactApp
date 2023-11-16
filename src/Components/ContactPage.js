@@ -5,15 +5,13 @@ const ContactPage = () => {
     <>
       <h1> Welcome to the Contact Page </h1>
       <div
-            style={{
-                display: "flex",
-                justifyContent: "centre",
-                alignItems: "centre",
-                height: "100vh",
-            }}
-        >
-            
-        </div>
+        style={{
+          display: "flex",
+          justifyContent: "centre",
+          alignItems: "centre",
+          height: "100vh",
+        }}
+      ></div>
     </>
   );
 };
