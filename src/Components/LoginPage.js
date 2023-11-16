@@ -21,7 +21,7 @@ const LoginPage = (props) => {
   return (
     <>
       <div className="container">
-        <h1>{props.Login}</h1>
+        <h1>Login Page</h1>
         <p align="center">UserName</p>
         <textarea className="form-control" id="Message" rows="2"></textarea>
         <p align="center">Password</p>
