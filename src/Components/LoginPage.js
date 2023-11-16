@@ -1,18 +1,22 @@
-import React from 'react';
-//import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export default function LoginPage(props) {
+const LoginPage = (props) => {
+  const navigate = useNavigate();
   const LogIn = () => {
-    // Retrieve username and password values
-    const Message = document.getElementById('Message');
+    //TODO: Read the concept of use ref hook and replace the below code with useref
+    const Message = document.getElementById("Message");
     console.log(Message.value);
-    const Message2 = document.getElementById('Message2');
+
+    const Message2 = document.getElementById("Message2");
     console.log(Message2.value);
 
-    // Perform login logic here...
-    // For demonstration purposes, let's assume the login is successful
-    // Replace this with your actual login logic
-    };
+    if (Message.value === "Avanish" && Message2.value === "Avanish") {
+      navigate("/HomePage");
+    } else {
+      alert("Login failed");
+    }
+  };
 
   return (
     <>
@@ -30,4 +34,6 @@ export default function LoginPage(props) {
       </div>
     </>
   );
-}
+};
+
+export default LoginPage;
