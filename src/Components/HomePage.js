@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 const HomePage = () => {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <h1> Welcome User </h1>
       <div
         style={{
