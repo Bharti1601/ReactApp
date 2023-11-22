@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-//import { Link } from "react-router-dom";
-//import Navbar from "./components/Navbar";
+
 const HomePage = () => {
   return (
     <>

@@ -1,18 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = (props) => {
   const navigate = useNavigate();
+  const Message = useRef("");
+
+  const Message2 = useRef("");
 
   const LogIn = () => {
-    //TODO: Read the concept of use ref hook and replace the below code with useref
-    const Message = document.getElementById("Message");
-    console.log(Message.value);
-
-    const Message2 = document.getElementById("Message2");
-    console.log(Message2.value);
-
-    if (Message.value === "Bharti" && Message2.value === "Bharti") {
+    if (
+      Message.current.value === "Bharti" &&
+      Message2.current.value === "Bharti"
+    ) {
       navigate("/HomePage");
     } else {
       alert("Login failed");
@@ -24,9 +23,22 @@ const LoginPage = (props) => {
       <div className="loginPage">
         <h1>Login Page</h1>
         <p align="center">UserName</p>
-        <input type="text" id="Message" placeholder="UserName"></input>
+        <input
+          type="text"
+          id="Message"
+          ref={Message}
+          placeholder="UserName"
+          autoComplete="off"
+        />
+        {/* Suggestions will not shown by using autocomplete as off */}
         <p align="center">Password</p>
-        <input type="text" id="Message2" placeholder="Password"></input>
+        <input
+          type="text"
+          id="Message2"
+          ref={Message2}
+          placeholder="Password"
+          autoComplete="off"
+        />
         <div className="mb-3">
           <button className="btn btn-primary loginButton" onClick={LogIn}>
             LOGIN
