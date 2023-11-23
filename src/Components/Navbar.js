@@ -10,9 +10,15 @@ const NavBar = () => {
       <Navbar bg="dark" data-bs-theme="dark">
         <Container>
           <Nav className="me-auto">
-            <NavLink className ="nav-link" to="/ContactPage">ContactPage</NavLink>
-            <NavLink className ="nav-link" to="/AboutUs">AboutUs</NavLink>
-            <NavLink className ="nav-link" to="/">SignoutPage</NavLink>
+            <NavLink className="nav-link" to="/ContactPage">
+              ContactPage
+            </NavLink>
+            <NavLink className="nav-link" to="/AboutUs">
+              AboutUs
+            </NavLink>
+            <NavLink className="nav-link" to="/SignoutPage">
+              LogOut
+            </NavLink>
           </Nav>
         </Container>
       </Navbar>

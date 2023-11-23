@@ -4,6 +4,7 @@ import LoginPage from "./LoginPage";
 import HomePage from "./HomePage";
 import ContactPage from "./ContactPage";
 import AboutUs from "./AboutUs";
+import SignoutPage from "./SignoutPage";
 const Routers = () => {
   return (
     <>
@@ -13,7 +14,7 @@ const Routers = () => {
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/ContactPage" element={<ContactPage />} />
           <Route path="/AboutUs" element={<AboutUs />} />
-          {/* <Route path="/SignoutPage" element={<SignoutPage />} /> */}
+          <Route path="/SignoutPage" element={<SignoutPage />} />
         </Routes>
       </BrowserRouter>
     </>

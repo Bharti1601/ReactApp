@@ -11,8 +11,12 @@ const LoginPage = (props) => {
     if (
       Message.current.value === "Bharti" &&
       Message2.current.value === "Bharti"
-    ) {
+    ) 
+    
+    {
       navigate("/HomePage");
+      localStorage.setItem('UserName',Message.current.value);
+      localStorage.setItem('Password',Message2.current.value);
     } else {
       alert("Login failed");
     }
@@ -22,7 +26,8 @@ const LoginPage = (props) => {
     <>
       <div className="loginPage">
         <h1>Login Page</h1>
-        <p align="center">UserName</p>
+        <p align="center"></p>
+        <label className="usernameInput"> Username </label>
         <input
           type="text"
           id="Message"
@@ -31,7 +36,9 @@ const LoginPage = (props) => {
           autoComplete="off"
         />
         {/* Suggestions will not shown by using autocomplete as off */}
-        <p align="center">Password</p>
+        <p align="center"></p>
+        <br/>
+        <label className="passwordInput" > Password </label>
         <input
           type="text"
           id="Message2"
