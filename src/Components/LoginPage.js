@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import React, { useRef} from "react";
 import { useNavigate } from "react-router-dom";
 
-const LoginPage = (props) => {
+const LoginPage = () => {
   const navigate = useNavigate();
   const Message = useRef("");
 
@@ -40,7 +40,7 @@ const LoginPage = (props) => {
         <br/>
         <label className="passwordInput" > Password </label>
         <input
-          type="text"
+          type="password"
           id="Message2"
           ref={Message2}
           placeholder="Password"
@@ -56,6 +56,8 @@ const LoginPage = (props) => {
   );
 };
 
+
 export default LoginPage;
+
 
 // rows is basically used for multiline input which can not be used in input type as the input is only used for single line input. We can use this with textarea to increase the multiple input.nd the height of the textarea will adjust based on the specified number of rows.

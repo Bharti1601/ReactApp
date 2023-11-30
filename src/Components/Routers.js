@@ -5,16 +5,19 @@ import HomePage from "./HomePage";
 import ContactPage from "./ContactPage";
 import AboutUs from "./AboutUs";
 import SignoutPage from "./SignoutPage";
+import PrivateRoute from "./PrivateRoute";
 const Routers = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/HomePage" element={<HomePage />} />
-          <Route path="/ContactPage" element={<ContactPage />} />
-          <Route path="/AboutUs" element={<AboutUs />} />
+          {/* <Route element = {<PrivateRoute/>}> */}
+          <Route path="/HomePage" element={<PrivateRoute Component={HomePage}/>} />
+          <Route path="/ContactPage" element={<PrivateRoute Component= {ContactPage}/>} />
+          <Route path="/AboutUs" element={<PrivateRoute Component= {AboutUs}/>} />
+          {/* </Route> */}
           <Route path="/SignoutPage" element={<SignoutPage />} />
+          <Route path="/" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </>
